@@ -20,10 +20,19 @@ public class Character {
         
     }
     
-    public void hurt(){
-        //bajar vida;
-    }
     public void shoot(){
         bullets-=1;
+    }
+    public int getid(){
+        return this.ID;
+    }
+    public int getlife(){
+        return this.life;
+    }
+    public void hurt(int damage){
+        this.life-=damage;
+    }
+    public int getbullets(){
+        return this.bullets;
     }
 }
